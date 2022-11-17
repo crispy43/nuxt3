@@ -1,8 +1,8 @@
-import Badge from '~/components/atoms/Badge.vue';
+import RoundedButton from '~/components/atoms/RoundedButton.vue';
 
 export default {
-  title: 'Atoms/Badge',
-  component: Badge,
+  title: 'Atoms/Buttons/RoundedButton',
+  component: RoundedButton,
   argTypes: {
     type: {
       control: {
@@ -24,13 +24,13 @@ export default {
 };
 
 const Template = args => ({
-  components: { Badge },
+  components: { RoundedButton },
   setup() { return { args }; },
   template: `
 <div class="w-full h-screen bg-white">
-  <Badge v-bind="args">
-    badge
-  </Badge>
+  <RoundedButton v-bind="args">
+    RoundedButton
+  </RoundedButton>
 </div>
   `,
 });

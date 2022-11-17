@@ -2,13 +2,149 @@
   "users": [
     {
       "id": "1",
-      "name": "kim",
-      "tel": "080-3333-4444"
+      "userName": "kim",
+      "email": "kim@gmail.com",
+      "mobile": "080-3333-4444",
+      "password": "1234"
     },
     {
       "id": "2",
-      "name": "lee",
-      "tel": "080-3333-4444"
+      "userName": "lee",
+      "email": "lee@gmail.com",
+      "mobile": "080-5555-6666",
+      "password": "1234"
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "title 01",
+      "tags": [
+        {
+          "type": "base",
+          "name": "tag"
+        },
+        {
+          "type": "primary",
+          "name": "student"
+        },
+        {
+          "type": "secondary",
+          "name": "teacher"
+        }
+      ],
+      "like": 3,
+      "createdAt": "2022-11-11",
+      "updatedAt": null
+    },
+    {
+      "id": "2",
+      "title": "title 02 title 02 title 02 title 02 title 02 title 02",
+      "tags": [
+        {
+          "type": "secondary",
+          "name": "teacher"
+        },
+        {
+          "type": "primary",
+          "name": "student1"
+        },
+        {
+          "type": "primary",
+          "name": "student2"
+        }
+      ],
+      "like": 4,
+      "createdAt": "2022-11-12",
+      "updatedAt": null
+    },
+    {
+      "id": "3",
+      "title": "title 03 title 03",
+      "tags": [
+        {
+          "type": "secondary",
+          "name": "teacher"
+        },
+        {
+          "type": "primary",
+          "name": "student"
+        },
+        {
+          "type": "accent",
+          "name": "new"
+        }
+      ],
+      "like": 5,
+      "createdAt": "2022-11-13",
+      "updatedAt": null
+    },
+    {
+      "id": "4",
+      "title": "title 04 title 04 title 04 title 04 title 04",
+      "tags": [
+        {
+          "type": "secondary",
+          "name": "teacher"
+        },
+        {
+          "type": "primary",
+          "name": "student"
+        },
+        {
+          "type": "outline",
+          "name": "level 1"
+        }
+      ],
+      "like": 530,
+      "createdAt": "2022-11-14",
+      "updatedAt": null
+    },
+    {
+      "id": "5",
+      "title": "title 05",
+      "tags": [
+        {
+          "type": "accent",
+          "name": "new"
+        },
+        {
+          "type": "primary",
+          "name": "student"
+        },
+        {
+          "type": "outline",
+          "name": "level 1"
+        },
+        {
+          "type": "outline",
+          "name": "level 2"
+        }
+      ],
+      "like": 100000,
+      "createdAt": "2022-11-15",
+      "updatedAt": null
+    },
+    {
+      "id": "6",
+      "title": "title 06",
+      "tags": [
+        {
+          "type": "base",
+          "name": "tag"
+        },
+        {
+          "type": "primary",
+          "name": "student"
+        },
+        {
+          "type": "secondary",
+          "name": "teacher"
+        }
+      ],
+      "like": 150,
+      "createdAt": "2022-11-16",
+      "updatedAt": null
     }
   ]
 }

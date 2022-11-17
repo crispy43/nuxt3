@@ -1,9 +1,9 @@
 <template>
   <button
     :class="[
-      'basic-button',
-      type && `basic-button-${type}`,
-      size && `basic-button-${size}`,
+      'rounded-button',
+      type && `rounded-button-${type}`,
+      size && `rounded-button-${size}`,
     ]"
     @click="click"
   >
@@ -12,16 +12,16 @@
 </template>
 
 <script setup lang="ts">
-interface BasicButtonProps {
+interface RoundedButtonProps {
   type?: 'primary' | 'secondary' | 'accent' | 'ghost' | 'outline';
   size?: 'lg' | 'md' | 'sm' | 'xs';
 }
-defineProps<BasicButtonProps>();
+defineProps<RoundedButtonProps>();
 
-interface BasicButtonEmits {
+interface RoundedButtonEmits {
   (e: 'click'): void;
 }
-const emit = defineEmits<BasicButtonEmits>();
+const emit = defineEmits<RoundedButtonEmits>();
 
 const click = () => {
   emit('click');
@@ -29,8 +29,8 @@ const click = () => {
 </script>
 
 <style scoped lang="scss">
-.basic-button {
-  @apply btn px-6;
+.rounded-button {
+  @apply btn rounded-full px-10;
 
   &-primary {
     @apply btn-primary;
@@ -53,7 +53,7 @@ const click = () => {
   }
 
   &-lg {
-    @apply btn-lg px-8;
+    @apply btn-lg px-12;
   }
 
   &-md {
@@ -61,11 +61,11 @@ const click = () => {
   }
 
   &-sm {
-    @apply btn-sm px-4;
+    @apply btn-sm px-8;
   }
 
   &-xs {
-    @apply btn-xs px-2;
+    @apply btn-xs px-6;
   }
 }
 </style>

@@ -1,6 +1,12 @@
 {
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+          "sourceType": "module"
+      },
   "extends": [
-    "@nuxtjs/eslint-config-typescript"
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:vue/vue3-recommended"
   ],
   "rules": {
     "no-console": ["warn", { "allow": ["warn", "error"] }],
@@ -9,9 +15,13 @@
     "object-curly-spacing": ["error", "always"],
     "semi": ["error", "always"],
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "vue/multi-word-component-names": ["warn", {
-      "ignores": ["index", "default", "main"]
+    "vue/multi-word-component-names": ["off", {
+      "ignores": ["index", "default", "main", "header", "footer"]
     }],
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "vue/script-setup-uses-vars": "error",
+    "vue/no-unused-vars": "error",
+    "vue/require-default-prop": "off",
+    "space-before-function-paren": ["error", "never"]
   }
 }

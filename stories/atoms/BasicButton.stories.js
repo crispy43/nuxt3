@@ -1,8 +1,8 @@
-import Badge from '~/components/atoms/Badge.vue';
+import BasicButton from '~/components/atoms/BasicButton.vue';
 
 export default {
-  title: 'Atoms/Badge',
-  component: Badge,
+  title: 'Atoms/Buttons/BasicButton',
+  component: BasicButton,
   argTypes: {
     type: {
       control: {
@@ -24,13 +24,13 @@ export default {
 };
 
 const Template = args => ({
-  components: { Badge },
+  components: { BasicButton },
   setup() { return { args }; },
   template: `
 <div class="w-full h-screen bg-white">
-  <Badge v-bind="args">
-    badge
-  </Badge>
+  <BasicButton v-bind="args">
+    BasicButton
+  </BasicButton>
 </div>
   `,
 });
