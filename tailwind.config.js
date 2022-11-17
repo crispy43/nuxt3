@@ -1,4 +1,4 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -7,9 +7,8 @@ module.exports = {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
   ],
-  theme: {
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['emerald'],
   },
-  variants: {
-  },
-  plugins: [],
 };

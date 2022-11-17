@@ -18,8 +18,6 @@ export default defineNuxtConfig({
   css: [
     '~/assets/styles/css/tailwind.css',
     '~/assets/styles/scss/main.scss',
-    '~/assets/styles/scss/atom.scss',
-    '~/assets/styles/scss/variables.scss',
   ],
   postcss: {
     plugins: {
