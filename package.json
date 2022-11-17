@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "start-build": "nuxi build && node .output/server/index.mjs",
+    "dev": "nuxt dev --port=8080",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "storybook": "start-storybook -p 6006 -s ./public,./assets",
+    "build:storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "mock": "json-server --watch ./mock/db.json"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-postcss": "^3.0.0-alpha.1",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/vue3": "^6.5.10",
+    "@vitest/ui": "^0.23.1",
+    "cypress": "^11.0.1",
+    "eslint": "^8.27.0",
+    "json-server": "^0.17.1",
+    "nuxt": "^3.0.0-rc.11",
+    "postcss": "^8.4.19",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "storybook-dark-mode": "^1.1.2",
+    "tailwindcss": "^3.2.4",
+    "vite-svg-loader": "^3.6.0",
+    "vitest": "^0.25.1"
+  },
+  "dependencies": {
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@pinia/nuxt": "^0.4.3",
+    "pinia": "^2.0.23",
+    "typescript": "^4.8.4"
+  }
+}

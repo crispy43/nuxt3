@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": ["warn", { "code": 100 }],
+    "object-curly-spacing": ["error", "always"],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "vue/multi-word-component-names": ["warn", {
+      "ignores": ["index", "default", "main"]
+    }],
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}
