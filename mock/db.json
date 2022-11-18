@@ -1,14 +1,16 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
+      "userId": "test1",
       "userName": "kim",
       "email": "kim@gmail.com",
       "mobile": "080-3333-4444",
       "password": "1234"
     },
     {
-      "id": "2",
+      "id": 2,
+      "userId": "test2",
       "userName": "lee",
       "email": "lee@gmail.com",
       "mobile": "080-5555-6666",

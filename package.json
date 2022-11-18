@@ -14,7 +14,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "mock": "json-server --watch ./mock/db.json"
+    "mock": "json-server --watch ./mock/db.json -m ./node_modules/json-server-auth"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
@@ -30,6 +30,7 @@
     "eslint": "^8.27.0",
     "eslint-plugin-vue": "^9.7.0",
     "json-server": "^0.17.1",
+    "json-server-auth": "^2.1.0",
     "nuxt": "^3.0.0",
     "postcss": "^8.4.19",
     "sass": "^1.56.1",

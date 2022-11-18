@@ -2,6 +2,12 @@
   <div class="news-details">
     <article>
       <h1>
+        {{ title }}
+      </h1>
+      <slot />
+    </article>
+    <!-- <article>
+      <h1>
         「再生可能エネルギー」の未来について考えよう（岩津中１年生の実践）
       </h1>
       <blockquote>
@@ -20,8 +26,8 @@
         <img src="~/assets/images/KakaoTalk_Image_2022-11-18-02-49-10.jpeg">
         <img src="~/assets/images/KakaoTalk_Photo_2022-11-18-02-51-41.jpeg">
       </div>
-    </article>
-    <article>
+    </article> -->
+    <!-- <article>
       <h1>
         米作りを通して豊かな心をはぐくむ（梅園小５年生の実践）
       </h1>
@@ -50,17 +56,18 @@
         <img src="~/assets/images/KakaoTalk_Photo_2022-11-18-02-52-17.jpeg">
         <img src="~/assets/images/KakaoTalk_Photo_2022-11-18-02-52-24.jpeg">
       </div>
-    </article>
+    </article> -->
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-  id: string;
+  id?: string;
+  title: string;
 }>();
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .news-details {
   @apply flex items-center flex-col w-full min-h-screen mb-20;
 

@@ -29,7 +29,13 @@ interface User {
 const { data: users } = await useFetch<User[]>('http://localhost:3000/users');
 console.log('users', users);
 
-const log = (e: any) => console.log(e);
+const log = async(o: any) => {
+  console.log(await $fetch('http://localhost:3000/users', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(o.values),
+  }));
+};
 </script>
 
 <style scoped lang="scss">
